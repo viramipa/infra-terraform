@@ -1,0 +1,34 @@
+{
+  "serviceName": "infra-terraform",
+  "timestamp": "2024-01-26T10:00:00Z",
+  "status": "healthy",
+  "version": "1.2.3",
+  "environment": "production",
+  "dependencies": {
+    "terraform": {
+      "version": "1.6.3",
+      "status": "operational"
+    },
+    "aws": {
+      "status": "connected",
+      "region": "us-east-1"
+    },
+    "vault": {
+      "status": "reachable",
+      "address": "https://vault.example.com"
+    }
+  },
+  "metrics": {
+    "cpuUsage": 0.15,
+    "memoryUsage": 0.60,
+    "diskSpaceAvailable": "50GB"
+  },
+  "buildInfo": {
+    "buildNumber": "12345",
+    "gitCommit": "abcdef1234567890"
+  },
+  "customProperties": {
+    "lastDeployment": "2024-01-25T18:00:00Z",
+    "team": "Infrastructure Team"
+  }
+}
